@@ -203,7 +203,7 @@ export default function EVAssist() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://evassist-backend.onrender.com", {
+      const response = await fetch("https://evassist-backend.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: msg }),
